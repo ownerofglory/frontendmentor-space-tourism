@@ -14,10 +14,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-bottom: 3px solid rgba(256, 256, 256, 0%);
 }
 
 .nav-item:hover {
-    border-bottom: 3px solid #979797;
+    animation-name: navItemHover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .nav-item-active {
@@ -90,6 +93,16 @@ nav {
     text-decoration: inherit;
     color: inherit;
     cursor: auto;
+}
+
+@keyframes navItemHover {
+    from {
+        border-bottom: 3px solid  rgba(256, 256, 256, 0%);
+    }
+
+    to {
+        border-bottom: 3px solid #979797;
+    }
 }
 
 @media (max-width: 1000px) {

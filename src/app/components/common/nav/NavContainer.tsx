@@ -2,6 +2,7 @@
 
 import {GenericProps} from "@/app/props/GenericProps";
 import {useState} from "react";
+import './navbar.css'
 
 export const NavContainer: React.FC<GenericProps> = ({children}) => {
     const [mobileExpanded, setMobileExpanded] = useState(false);

@@ -1,8 +1,9 @@
-import {NavContainer} from "@/app/components/common/NavContainer";
-import {NavigationBar} from "@/app/components/common/NavigationBar";
-import {NavigationItem} from "@/app/components/common/NavigationItem";
+import {NavContainer} from "@/app/components/common/nav/NavContainer";
+import {NavigationBar} from "@/app/components/common/nav/NavigationBar";
+import {NavigationItem} from "@/app/components/common/nav/NavigationItem";
 import Layout from "@/app/layout";
-import {Inter} from "next/font/google";
+import {Barlow_Condensed, Inter} from "next/font/google";
+
 const inter = Inter({ subsets: ['latin'] })
 
 

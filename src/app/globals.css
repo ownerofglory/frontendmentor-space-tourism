@@ -71,6 +71,31 @@ body {
     background-image: url("../../public/assets/crew/background-crew-desktop.jpg");
 }
 
+.heading-5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #D0D6F9;
+    letter-spacing: 4.75px;
+    margin-bottom: 42px;
+}
+
+.heading-1 {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 150px;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+}
+
+.body-text {
+    font-family: 'Barlow', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 32px;
+}
+
 @media (max-width: 1000px) {
     .background-home {
         background-image: url("../../public/assets/home/background-home-tablet.jpg");
@@ -86,6 +111,21 @@ body {
 
     .background-crew {
         background-image: url("../../public/assets/crew/background-crew-tablet.jpg");
+    }
+
+    .heading-5 {
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    .heading-1 {
+        font-size: 150px;
+        margin-bottom: 32px;
+    }
+
+    .body-text {
+        font-size: 18px;
     }
 }
 
@@ -104,5 +144,19 @@ body {
 
     .background-crew {
         background-image: url("../../public/assets/crew/background-crew-mobile.jpg");
+    }
+
+    .heading-5 {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .heading-1 {
+        font-size: 80px;
+    }
+
+    .body-text {
+        font-size: 15px;
     }
 }

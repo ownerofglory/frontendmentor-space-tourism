@@ -1,0 +1,32 @@
+.main-container {
+    display: flex;
+}
+
+.half-screen {
+    width: 50vw;
+    position: relative;
+    height: 80vh;
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .half-screen {
+        width: 100vw;
+        max-height: 46vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .half-screen {
+        width: 100vw;
+    }
+}

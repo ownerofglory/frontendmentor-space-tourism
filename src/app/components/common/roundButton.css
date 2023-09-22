@@ -1,0 +1,87 @@
+.button-container {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+}
+
+.round-button {
+    width: 274px;
+    height: 274px;
+    border-radius: 137px;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+    text-transform: uppercase;
+    border: none;
+    animation-name: slideout;
+    animation-duration: 0.5s;
+}
+
+.round-button:hover {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+    /*animation-iteration-count: 1;*/
+    /*animation-direction: normal;*/
+}
+
+@keyframes slidein {
+    from {
+        box-shadow: 0px 0px 0px 0px rgba(256, 256, 256, 1%);
+    }
+
+    to {
+        box-shadow: 0px 0px 0px 88px rgba(256, 256, 256, 10.36%);
+    }
+}
+
+@keyframes slideout {
+    from {
+        box-shadow: 0px 0px 0px 88px rgba(256, 256, 256, 10.36%);
+    }
+
+    to {
+        box-shadow: 0px 0px 0px 0px rgba(256, 256, 256, 1%);
+    }
+}
+
+@media (max-width: 1000px) {
+    .button-container {
+        width: 242px;
+        height: 242px;
+        padding: 0;
+    }
+
+    .round-button {
+        width: 242px;
+        height: 242px;
+        animation: none;
+        font-size: 32px;
+    }
+
+    .round-button:hover {
+        animation: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .button-container {
+        width: 150px;
+        height: 150px;
+        padding: 0;
+    }
+
+    .round-button {
+        width: 150px;
+        height: 150px;
+        animation: none;
+        font-size: 20px;
+        letter-spacing: 1.25px;
+    }
+
+    .round-button:hover {
+        animation: none;
+    }
+}
