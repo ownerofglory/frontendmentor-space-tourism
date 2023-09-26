@@ -22,8 +22,6 @@
     animation-duration: 0.5s;
     animation-name: slidein;
     animation-fill-mode: forwards;
-    /*animation-iteration-count: 1;*/
-    /*animation-direction: normal;*/
 }
 
 @keyframes slidein {

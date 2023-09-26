@@ -1,0 +1,25 @@
+.destination-title {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.destination-title .num {
+    color: rgba(256, 256, 256, 25%);
+    font-weight: 700;
+    margin-right: 28px;
+}
+
+.destination-container {
+    padding-left: 16%;
+    padding-top: 10%;
+}
+
+.destination-container img {
+    padding-left: 24%;
+    padding-top: 8%;
+}
+
+.destination-details-containers {
+    padding-top: 20%;
+    padding-left: 20%;
+}

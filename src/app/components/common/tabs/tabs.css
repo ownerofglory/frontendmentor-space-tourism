@@ -1,0 +1,44 @@
+.tabs-head {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-item {
+    color: #D0D6F9;
+    height: 34px;
+    border-bottom: 3px solid rgba(256, 256, 256, 0%);
+    margin-right: 36px;
+}
+
+.tabs-head:last-child {
+    margin-right: 0px;
+}
+
+.tab-item-active {
+    height: 34px;
+    color: #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.tab-item:hover {
+    animation-name: tabItemHover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.tab-title {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+@keyframes tabItemHover {
+    from {
+        border-bottom: 3px solid  rgba(256, 256, 256, 0%);
+    }
+
+    to {
+        border-bottom: 3px solid #979797;
+    }
+}

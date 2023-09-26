@@ -80,12 +80,36 @@ body {
     margin-bottom: 42px;
 }
 
+.heading-2 {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 100px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    /*margin-bottom: 42px;*/
+}
+
 .heading-1 {
     font-family: 'Bellefair', serif;
     font-weight: 400;
     font-size: 150px;
     color: #FFFFFF;
     margin-bottom: 42px;
+}
+
+.subheading-1 {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.subheading-2 {
+    font-family: 'Barlow Condensed', serif;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .body-text {
@@ -150,6 +174,11 @@ body {
         font-weight: 400;
         font-size: 16px;
         letter-spacing: 2.7px;
+    }
+
+    .heading-2 {
+        font-size: 100px;
+        font-family: 'Bellefair', serif;
     }
 
     .heading-1 {

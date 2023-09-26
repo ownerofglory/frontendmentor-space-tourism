@@ -1,0 +1,29 @@
+.destination-content-parent {
+    width: 445px;
+}
+
+.destination-content-parent h2 {
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+.destination-description {
+    color: #D0D6F9;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #383B4B;
+}
+
+.destination-facts-container {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    display: flex;
+}
+
+.destination-facts-container .subheading-2 {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.destination-fact {
+    width: 50%;
+}
