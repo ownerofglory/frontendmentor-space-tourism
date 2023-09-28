@@ -30,7 +30,7 @@ export const DestinationMainContainer: React.FC<DestinationMainContainerProps> =
 
     return (
         <MainContainer>
-            <HalfScreenContainer>
+            <HalfScreenContainer className={'half-screen-dest'}>
                 <div className="destination-container">
                     <h5 className={`heading-5 destination-title ${barlowCondensed.className}`}>
                         <span className={'num'}>01</span>
@@ -40,7 +40,7 @@ export const DestinationMainContainer: React.FC<DestinationMainContainerProps> =
                     <img src={chosenDestination.image.src}/>
                 </div>
             </HalfScreenContainer>
-            <HalfScreenContainer>
+            <HalfScreenContainer className={'half-screen-dest'}>
                 <Tabs className={'destination-details-containers'}>
                     {
                         items.map(item => (

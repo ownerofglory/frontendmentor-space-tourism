@@ -27,3 +27,53 @@
 .destination-fact {
     width: 50%;
 }
+
+
+@media (max-width: 1000px) {
+    .destination-details-containers {
+        padding-top: 20px;
+    }
+
+    .destination-content-parent h2 {
+        padding-left: 36px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .destination-content-parent {
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .destination-facts-container {
+        width: 100%;
+    }
+
+    .destination-fact {
+        width: 50%;
+    }
+
+    .destination-description {
+        padding-bottom: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .destination-content-parent h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .destination-facts-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-fact {
+        width: 50vw;
+    }
+}

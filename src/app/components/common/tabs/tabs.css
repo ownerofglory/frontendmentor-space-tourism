@@ -33,6 +33,16 @@
     text-transform: uppercase;
 }
 
+@media (max-width: 480px) {
+
+    .tabs-head {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+        justify-content: space-between;
+    }
+}
+
 @keyframes tabItemHover {
     from {
         border-bottom: 3px solid  rgba(256, 256, 256, 0%);
