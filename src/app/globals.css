@@ -164,6 +164,7 @@ body {
 
     .background-destination {
         background-image: url("../../public/assets/destination/background-destination-mobile.jpg");
+        background-color: #0b0d13;
     }
 
     .background-crew {
@@ -187,5 +188,6 @@ body {
 
     .body-text {
         font-size: 15px;
+        line-height: 25px;
     }
 }

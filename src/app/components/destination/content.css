@@ -62,9 +62,14 @@
 }
 
 @media (max-width: 480px) {
+    .destination-content-parent {
+        width: 327px;
+    }
+
     .destination-content-parent h2 {
         padding-top: 20px;
         padding-bottom: 20px;
+        padding-left: 0;
     }
 
     .destination-facts-container {
@@ -75,5 +80,10 @@
 
     .destination-fact {
         width: 50vw;
+    }
+
+    .destination-title {
+        /*width: 220px;*/
+        margin: 0;
     }
 }

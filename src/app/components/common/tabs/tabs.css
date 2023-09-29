@@ -38,8 +38,13 @@
     .tabs-head {
         display: flex;
         flex-direction: row;
-        width: 60vw;
+        min-width: 68vw;
         justify-content: space-between;
+    }
+
+    .tab-item {
+        margin-right: 0;
+        text-align: center;
     }
 }
 

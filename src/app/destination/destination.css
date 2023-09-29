@@ -1,6 +1,6 @@
 .destination-title {
     text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
+    /*font-family: 'Barlow Condensed', sans-serif;*/
 }
 
 .destination-title .num {
@@ -55,6 +55,11 @@
 }
 
 @media (max-width: 480px) {
+    .destination-container {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
     .destination-container img {
         width: 170px;
     }
