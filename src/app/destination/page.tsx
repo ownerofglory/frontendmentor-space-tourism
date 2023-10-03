@@ -3,19 +3,14 @@ import {NavigationBar} from "@/app/components/common/nav/NavigationBar";
 import {NavigationItem} from "@/app/components/common/nav/NavigationItem";
 import Layout from "@/app/layout";
 import {Barlow_Condensed, Inter} from "next/font/google";
-import {Tabs} from "@/app/components/common/tabs/Tabs";
-import {TabItem} from "@/app/components/common/tabs/TabItem";
-import {TabPanel} from "@/app/components/common/tabs/TabPanel";
-import {MainContainer} from "@/app/components/common/layout/MainContainer";
-import {HalfScreenContainer} from "@/app/components/common/layout/HalfScreenContainer";
 import imageMoon from '../../../public/assets/destination/image-moon.png'
 import imageMars from '../../../public/assets/destination/image-mars.png'
 import imageEuropa from '../../../public/assets/destination/image-europa.png'
 import imageTitan from '../../../public/assets/destination/image-titan.png'
 import './destination.css'
 import {DestinationDetailsModel} from "@/app/model/DestinationDetailsModel";
-import {DestinationContent} from "@/app/components/destination/DestinationContent";
 import {DestinationMainContainer} from "@/app/components/destination/DestinationMainContainer";
+import {client} from "../../../sanity/lib/client";
 
 const inter = Inter({ subsets: ['latin'] })
 const barlowCondensed = Barlow_Condensed({
@@ -24,6 +19,10 @@ const barlowCondensed = Barlow_Condensed({
 })
 
 const DestinationPage = () => {
+    const fetchDestination = async (): Promise<DestinationDetailsModel[]> => {
+       return await client.fetch('*[type == "destination"]');
+    }
+
     const tabContents: DestinationDetailsModel[] = [
         {
             title: 'Moon',
