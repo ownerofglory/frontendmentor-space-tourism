@@ -15,20 +15,42 @@ export default defineType({
             title: 'Description',
             type: 'string',
         }),
-        defineField({
+        {
             name: 'image',
             title: 'Image',
-            type: 'image',
-            options: {
-                hotspot: true,
-            },
+            type: 'document',
             fields: [
-                {
-                    name: 'alt',
-                    type: 'string',
-                    title: 'Alternative Text',
-                }
+                defineField({
+                    name: 'landscape',
+                    title: 'Landscape',
+                    type: 'image',
+                    options: {
+                        hotspot: true,
+                    },
+                    fields: [
+                        {
+                            name: 'alt',
+                            type: 'string',
+                            title: 'Alternative Text',
+                        }
+                    ]
+                }),
+                defineField({
+                    name: 'portrait',
+                    title: 'Portrait',
+                    type: 'image',
+                    options: {
+                        hotspot: true,
+                    },
+                    fields: [
+                        {
+                            name: 'alt',
+                            type: 'string',
+                            title: 'Alternative Text',
+                        }
+                    ]
+                })
             ]
-        })
+        }
     ]
 })

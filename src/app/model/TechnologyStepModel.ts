@@ -1,9 +1,7 @@
 import {StaticImageData} from "next/image";
 
-export interface DestinationDetailsModel {
+export interface TechnologyStepModel {
     title: string
     description: string
-    avgDistance: string
-    estdTravelTime: string
     image: StaticImageData
 }

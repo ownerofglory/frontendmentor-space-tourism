@@ -3,11 +3,25 @@ import {NavigationBar} from "@/app/components/common/nav/NavigationBar";
 import {NavigationItem} from "@/app/components/common/nav/NavigationItem";
 import Layout from "@/app/layout";
 import {Barlow_Condensed, Inter} from "next/font/google";
+import {client} from "../../../sanity/lib/client";
+import {groq} from "next-sanity";
+import {TechnologyStepModel} from "@/app/model/TechnologyStepModel";
 
 const inter = Inter({ subsets: ['latin'] })
 
+const fetchTechnologyStep = async (): Promise<TechnologyStepModel[]> => {
+    return client.fetch(groq`*[_type == "launchSteps"]{
+        title,
+        description,
+        "image": {
+          "src": image.asset->url
+        }
+    }`)
+}
 
-const TechnologyPage = () => {
+const TechnologyPage = async () => {
+    const technologySteps = await fetchTechnologyStep()
+
     return (
         <>
             <Layout>
@@ -22,6 +36,7 @@ const TechnologyPage = () => {
                             </NavigationBar>
                         </NavContainer>
                     </div>
+
                 </body>
             </Layout>
         </>

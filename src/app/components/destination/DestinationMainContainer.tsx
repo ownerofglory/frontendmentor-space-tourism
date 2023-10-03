@@ -49,8 +49,8 @@ export const DestinationMainContainer: React.FC<DestinationMainContainerProps> =
                                       handler={makeTabChosenHandler(item, onTabChose)}>
                                 <DestinationContent title={item.title}
                                                     description={item.description}
-                                                    distanceStr={item.distanceStr}
-                                                    travelTimeStr={item.travelTimeStr}
+                                                    distanceStr={item.avgDistance}
+                                                    travelTimeStr={item.estdTravelTime}
                                                     handler={makeTabChosenHandler(item, onTabChose)}
                                 />
                             </TabPanel>
